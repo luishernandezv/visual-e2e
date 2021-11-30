@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "webdriverio": "node simple-test.js",
-    "mocha:test": "mocha simple-mocha-test.js",
+    "mocha:test": "mocha -t 0 simple-mocha-test.js",
     "jest:mocha": "jest simple-jest-test.js"
   },
   "repository": {

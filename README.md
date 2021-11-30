@@ -5,7 +5,7 @@ Simple Visual E2E Test Repo
 ## Prerequisite
 
 - Node installed
-- WebdriverIO installed (Will be installed in next step)
+- [WebdriverIO](https://webdriver.io/) installed (Will be installed in next step)
 - Have a test framework installed e.g Mocha, Jest (Will be installed in next step)
 
 ### Install dependencies
@@ -13,12 +13,6 @@ Simple Visual E2E Test Repo
 #### Linux/macOS
 
 ```bash
-npm install
-```
-
-#### Windows PowerShell
-
-```powershell
 npm install
 ```
 

@@ -21,10 +21,8 @@ const config = {
   },
 };
 
-let browser;
-
 async function simpleTest() {
-  browser = await remote(config);
+  const browser = await remote(config);
 
   //Navigate to the test site
   await browser.url('http://saucedemo.com');
@@ -48,11 +46,12 @@ async function simpleTest() {
   //End visual test and get result
   const result = await browser.execute('/*@visual.end*/');
 
+  await browser.deleteSession();
+
+  //Check if tests passed
   if (!result.passed) {
     throw new Error(result.message);
   }
-
-  await browser.deleteSession();
 
   return 'Test Successful';
 }
