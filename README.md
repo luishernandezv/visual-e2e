@@ -11,7 +11,7 @@ Simple Visual E2E Test Repo
 ### Clone repo
 
 ```bash
-git clone git@github.com:luisVelasquezSauce/visual-e2e.git
+git clone git@github.com:luishernandezv/visual-e2e.git
 ```
 
 ### Install dependencies
