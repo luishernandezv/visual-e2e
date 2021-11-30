@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "webdriverio": "node simple-test.js",
-    "mocha:test": "mocha -t 0 simple-mocha-test.js",
-    "jest:mocha": "jest simple-jest-test.js"
+    "test:mocha": "mocha -t 0 simple-mocha-test.js",
+    "test:jest": "jest --testTimeout=60000"
   },
   "repository": {
     "type": "git",

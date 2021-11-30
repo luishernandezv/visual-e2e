@@ -8,6 +8,12 @@ Simple Visual E2E Test Repo
 - [WebdriverIO](https://webdriver.io/) installed (Will be installed in next step)
 - Have a test framework installed e.g Mocha, Jest (Will be installed in next step)
 
+### Clone repo
+
+```bash
+git clone git@github.com:luisVelasquezSauce/visual-e2e.git
+```
+
 ### Install dependencies
 
 #### Linux/macOS
@@ -38,7 +44,7 @@ $Env:SAUCE_ACCESS_KEY = "<REPLACE THIS WITH A VALID SCREENER API KEY>"
 
 ## Run tests
 
-NOTE: Your **first test run will fail** as there are no baselines to compare against to. More info [here](https://docs.saucelabs.com/visual/e2e-testing/setup/#5-run) or configure your test to not fail on new states using `failOnNewStates` capability, more info [here](https://docs.saucelabs.com/visual/e2e-testing/commands-options/#saucevisual-capability-options)
+NOTE: Your **first test run will fail** as there are no baselines to compare against to. More info [here](https://docs.saucelabs.com/visual/e2e-testing/setup/#5-run) or configure your test to not fail on new states using `failOnNewStates` capability, more info [here](https://docs.saucelabs.com/visual/e2e-testing/commands-options/#saucevisual-capability-options). Once you have accepted your changes you can rerun your tests.
 
 ### Using only webdriverio
 
@@ -49,11 +55,11 @@ npm run webdriverio
 ### Using webdriverio and mocha
 
 ```bash
-npm run mocha:test
+npm run test:mocha
 ```
 
 ### Using webdriverio and jest
 
 ```bash
-npm run jest:test
+npm run test:jest
 ```
