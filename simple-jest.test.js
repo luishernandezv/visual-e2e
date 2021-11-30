@@ -40,6 +40,12 @@ test('Should run a visual test using mocha', async function () {
   //Initialize the visual test
   await browser.execute('/*@visual.init*/', 'Swag Labs');
 
+  if (process.env.APPLY_CHANGES) {
+    await browser.execute(
+      "document.querySelector('input#login-button').style.background='green'"
+    );
+  }
+
   await browser.execute('/*@visual.snapshot*/', 'Login');
 
   //Log in

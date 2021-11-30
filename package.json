@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "webdriverio": "node simple-test.js",
+    "webdriverio-changes": "APPLY_CHANGES=true node simple-test.js",
     "test:mocha": "mocha -t 0 simple-mocha-test.js",
-    "test:jest": "jest --testTimeout=60000"
+    "test:mocha-changes": "APPLY_CHANGES=true mocha -t 0 simple-mocha-test.js",
+    "test:jest": "jest --testTimeout=60000",
+    "test:jest-changes": "APPLY_CHANGES=true jest --testTimeout=60000"
   },
   "repository": {
     "type": "git",
